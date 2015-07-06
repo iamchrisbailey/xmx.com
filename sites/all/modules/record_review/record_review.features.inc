@@ -14,6 +14,30 @@ function record_review_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function record_review_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: record_review.
+  $styles['record_review'] = array(
+    'label' => 'Record Review',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 319,
+          'height' => 319,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function record_review_node_info() {

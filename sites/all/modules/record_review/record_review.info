@@ -20,6 +20,7 @@ features[field_instance][] = node-record_review-field_album
 features[field_instance][] = node-record_review-field_artist
 features[field_instance][] = node-record_review-field_record_cover
 features[field_instance][] = node-record_review-field_record_label
+features[image][] = record_review
 features[node][] = record_review
 features[taxonomy][] = album
 features[taxonomy][] = artist
