@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Record Review feature.
+ */
+
+include_once 'record_review.features.inc';
